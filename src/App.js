@@ -5,7 +5,7 @@ import React from "react";
 
 function App() {
   return (
-    <div className="max-w-[1440px]   ">
+    <div className="max-w-[1440px] mr-16 ml-16  ">
       <RouterProvider router={router}></RouterProvider>
     </div>
   );
