@@ -8,6 +8,7 @@ import SignUp from "../../Pages/SignUp/SignUp";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Blogs from "../../Pages/Blogs/Blogs";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
+import CatagoryItems from "../../Pages/CatagoryItems/CatagoryItems";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp></SignUp>,
+      },
+      {
+        path: "/catagory/:id",
+        element: <CatagoryItems></CatagoryItems>,
+        loader: ({ params }) => fetch(`http://localhost:5000/catagorys/${params.id}`),
       },
     ],
   },
