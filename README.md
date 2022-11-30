@@ -18,7 +18,6 @@
 - React Icons
 - Tanstack Query
 - Javascript Time Ago
-- Axios
 - Firebase
 - React Hook Form
 
@@ -26,9 +25,5 @@
 
 - NodeJs
 - ExpressJs
-- Mongoose
 - MongoDB
 - Json Web Token
-- Cloudinary
-- Cors
-- Express Async Handler
